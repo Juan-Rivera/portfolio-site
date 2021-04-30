@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* content */
+.wrap {
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+/* image */
+.image-container {
+  width: 200px;
+}
+.developer{
+  width: 200px;
+}
+/* content */
+.content-contianer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title h1{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
+  font-size: 6em;
+  margin: 0;
+}
+.who-link a{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: black;
+}
+.who-link a:hover{
+  color: white;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* icons */
+.icon {
+  width: 86px;
+  height: 84px;
+}
+  /* github */
+    #github {
+      background: url("icons/github-open.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+    #github:hover {
+      background: url("icons/github-closed.svg") no-repeat; 
+      background-size: 86px 84px;
+    }
+  /* linkedIn */
+    #linkedin {
+      background: url("icons/linkedIn-open.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+    #linkedin:hover {
+      background: url("icons/linkedIn-closed.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+  /* email */
+    #email {
+      background: url("icons/email-open.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+    #email:hover {
+      background: url("icons/email-closed.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+  /* medium */
+    #medium {
+      background: url("icons/medium-open.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+    #medium:hover {
+      background: url("icons/medium-closed.svg") no-repeat;
+      background-size: 86px 84px;
+    }
+
+
+/* mobile */
+@media screen and (max-width: 425px) {
+  /* resize */
+  .wrap{
+    width: 305px;
+  }
+  .image-container{
+    width: 125px;
+  }
+  .developer{
+    width: 125px;
+  }
+  .content-container{
+    width: 180px;
+  }
+  .title h1{
+    font-size: 3em;
+  }
+  .who-link a{
+    font-size: 1.5em;
+  }
+  .who-link{
+    margin-top: 10px;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  /* icons */
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+    /* github */
+      #github {
+        background: url("icons/github-open.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+      #github:hover {
+        background: url("icons/github-closed.svg") no-repeat; 
+        background-size: 64px 64px;
+      }
+    /* linkedIn */
+      #linkedin {
+        background: url("icons/linkedIn-open.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+      #linkedin:hover {
+        background: url("icons/linkedIn-closed.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+    /* email */
+      #email {
+        background: url("icons/email-open.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+      #email:hover {
+        background: url("icons/email-closed.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+    /* medium */
+      #medium {
+        background: url("icons/medium-open.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+      #medium:hover {
+        background: url("icons/medium-closed.svg") no-repeat;
+        background-size: 64px 64px;
+      }
+}
+
+
+
+
+/* gradient background */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
